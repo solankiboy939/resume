@@ -430,3 +430,95 @@ footer {
 footer p {
   text-align: center;
 }
+
+
+
+
+
+/* Add to CSS */
+#achievements {
+  padding: 4rem 0;
+  background: #f9f9f9;
+}
+
+.achievements-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.milestone-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.milestone-card:hover {
+  transform: translateY(-5px);
+}
+
+.milestone-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.milestone-icon {
+  width: 50px;
+  height: 50px;
+  background: #2ecc71;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+}
+
+.milestone-icon i {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.milestone-content h3 {
+  font-size: 1.4rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.milestone-description {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.milestone-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.pill {
+  background: #e9f5f0;
+  color: #2ecc71;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid #d1ede2;
+}
+
+@media (max-width: 768px) {
+  .achievements-container {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+  
+  .milestone-card {
+    padding: 1.5rem;
+  }
+}
