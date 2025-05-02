@@ -17,8 +17,9 @@
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
           <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -80,7 +81,7 @@
       <div class="section-container">
         <div class="section__pic-container">
           <img
-            src="./assets/download (4).jpeg"
+            src="./assets/about.jpg"
             alt="Profile picture"
             class="about-pic"
           />
@@ -382,8 +383,280 @@
 </section>
 
 <style>
+/* Add to CSS */
+#achievements {
+  padding: 4rem 0;
+  background: #f9f9f9;
+}
 
+.achievements-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.milestone-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.milestone-card:hover {
+  transform: translateY(-5px);
+}
+
+.milestone-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.milestone-icon {
+  width: 50px;
+  height: 50px;
+  background: #2ecc71;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+}
+
+.milestone-icon i {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.milestone-content h3 {
+  font-size: 1.4rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.milestone-description {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.milestone-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.pill {
+  background: #e9f5f0;
+  color: #2ecc71;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid #d1ede2;
+}
+
+@media (max-width: 768px) {
+  .achievements-container {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+  
+  .milestone-card {
+    padding: 1.5rem;
+  }
+}
 </style>
+<!-- certificate -->
+
+<!-- Add this after Achievements section -->
+<section id="certifications">
+  <p class="section__text__p1">Validate Expertise</p>
+  <h1 class="title">Professional Certifications</h1>
+  
+  <div class="certifications-container">
+    <!-- Cert 1 -->
+    <div class="certification-card">
+      <div class="certificate-image">
+        <img src="./assets/gfg.png" alt="Microsoft Azure Fundamentals" class="cert-img">
+        <div class="cert-overlay">
+          <button class="view-cert" onclick="window.open('https://media.geeksforgeeks.org/courses/certificates/425cdb1686bd8f93ead8f306d781b255.pdf')">Verify</button>
+        </div>
+      </div>
+      <div class="certificate-details">
+        <h3>Complete Machine Learning & Data Science Program</h3>
+        <p>GeeksForGeeks • July 2024</p>
+        <span class="cert-id">Credential ID: 425cdb1686bd8f93ead8f306d781b255</span>
+      </div>
+    </div>
+
+    <!-- Cert 2 -->
+    <div class="certification-card">
+      <div class="certificate-image">
+        <img src="./assets/illm.png" alt="Python Specialist" class="cert-img">
+        <div class="cert-overlay">
+          <button class="view-cert" onclick="window.open('https://www.coursera.org/account/accomplishments/verify/JDSCEYKFVAQ9')">Verify</button>
+        </div>
+      </div>
+      <div class="certificate-details">
+        <h3>Introduction to Large Language Models</h3>
+        <p>HackerRank • February 6, 2024</p>
+        <span class="cert-id">Credential ID: JDSCEYKFVAQ9</span>
+      </div>
+    </div>
+
+    <!-- Cert 3 -->
+    <div class="certification-card">
+      <div class="certificate-image">
+        <img src="./assets/gfg2.png" alt="Problem Solving" class="cert-img">
+        <div class="cert-overlay">
+          <button class="view-cert" onclick="window.open('https://media.geeksforgeeks.org/courses/certificates/f948ccd083804bba21bc3453da3c46d3.pdf')">Verify</button>
+        </div>
+      </div>
+      <div class="certificate-details">
+        <h3>Data Science BootCamp - From Analysing Data To Creating ML Models</h3>
+        <p>LeetCode • 30 July, 2024</p>
+        <span class="cert-id">Badge ID: f948ccd083804bba21bc3453da3c46d3</span>
+      </div>
+    </div>
+
+    <!-- Cert 4 -->
+    <!-- <div class="certification-card">
+      <div class="certificate-image">
+        <img src="./assets/ml-cert.png" alt="Machine Learning" class="cert-img">
+        <div class="cert-overlay">
+          <button class="view-cert" onclick="window.open('https://media.geeksforgeeks.org/courses/certificates/f948ccd083804bba21bc3453da3c46d3.pdf')">Verify</button>
+        </div>
+      </div>
+      <div class="certificate-details">
+        <h3>Machine Learning Specialist</h3>
+        <p>Coursera • Sep 2023</p>
+        <span class="cert-id">Credential ID: ML-XXXX</span>
+      </div>
+    </div> -->
+  </div>
+
+  <img 
+    src="./assets/arrow.png" 
+    alt="Arrow icon" 
+    class="icon arrow"
+    onclick="location.href='./#contact'"
+  />
+</section>
+
+<style>
+/* Add to CSS */
+#certifications {
+  padding: 4rem 0;
+}
+
+.certifications-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.certification-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.certification-card:hover {
+  transform: translateY(-5px);
+}
+
+.certificate-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+
+.cert-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.cert-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(46, 204, 113, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.certificate-image:hover .cert-overlay {
+  opacity: 1;
+}
+
+.view-cert {
+  background: white;
+  color: #2ecc71;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.view-cert:hover {
+  background: #27ae60;
+  color: white;
+}
+
+.certificate-details {
+  padding: 1.5rem;
+}
+
+.certificate-details h3 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.certificate-details p {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+}
+
+.cert-id {
+  color: #2ecc71;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .certifications-container {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+  
+  .cert-img {
+    height: 180px;
+  }
+}
+</style>
+
+
+ <!-- end; -->
       
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
